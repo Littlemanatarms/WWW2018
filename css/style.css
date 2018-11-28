@@ -26,9 +26,7 @@ body {
 	list-style:none;
 	padding:0 0px 0px 278px;
 	float: right;
-	width: 415px;
-	background-color: #000000;
-	position: fixed;
+	width: 415;
 }
 #topmenu li {
 	display:inline;
