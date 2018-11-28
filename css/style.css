@@ -8,15 +8,17 @@ body {
 	font-size:12px;
 	color:#000000;
 }
-/* Header /*
+/*Header*/
 #header {
 	height:242PX;
 	margin:0px auto 15px auto;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	color: #8B0000;
-}
+}  
 
-/* Video at 30:07, he's looking for something to copypaste here */
+#topbar {
+	height:78px;
+}
 
 /*Header Menu*/
 #topmenu {
