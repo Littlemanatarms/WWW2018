@@ -96,7 +96,20 @@ return true;
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KcIul71bIsU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p> Please note that all Incompetech music is royalty free so using this here should be OK. </p>
 <p> Click here to get your position</p>
-<button onclick="showPosition()">Click</button>
+<button onclick="showLocation()">Click</button>
+<script>
+function showLocation(){
+if(navigator.geolocation){
+navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+alert("Your browser doesn't support geolocation");
+}
+}
+
+function showPosition(position){
+alert("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude);
+}
+</script>
 <ul>
 <p> Does this work as a list header? </p>
 <li> List Test 1 </li>
